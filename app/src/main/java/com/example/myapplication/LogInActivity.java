@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,11 +43,13 @@ public class LogInActivity extends AppCompatActivity {
     message=findViewById(R.id.messageLogIn);
     message.setText("enter your phone number");
 
+
+
     buttonSignIn=findViewById(R.id.buttonLogIn);
     editTextCode=findViewById(R.id.codeLogIn);
     editTextPhone=findViewById(R.id.phoneLogIn);
 
-
+    userLoggedIn();
 
     buttonSignIn.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -129,7 +132,9 @@ public class LogInActivity extends AppCompatActivity {
 
             //start Main page intent
 
-
+            Intent intent = new Intent(LogInActivity.this, MainPageActivity.class);
+            startActivity(intent);
+            finish();
 
 
         }

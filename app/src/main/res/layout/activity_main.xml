@@ -48,8 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="code"
         android:inputType="textPassword"
-        android:text="code"
         app:layout_constraintEnd_toEndOf="@+id/phoneLogIn"
         app:layout_constraintStart_toStartOf="@+id/phoneLogIn"
         app:layout_constraintTop_toBottomOf="@+id/phoneLogIn" />
